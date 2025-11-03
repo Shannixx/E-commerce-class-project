@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Wear - E-commerce Template (SPA Simulation)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top bg-white border-bottom shadow-sm">
+        <div class="container-fluid container-max-width">
+            <a class="navbar-brand logo nav-link-spa" href="#home">ELEGANT WEAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-spa active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-spa" href="#shop">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-spa" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-spa" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown d-lg-none"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMore" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMore">
+                        <li><a class="dropdown-item nav-link-spa" href="#careers">Careers</a></li>
+                        <li><a class="dropdown-item nav-link-spa" href="#store-locator">Store Locator</a></li>
+                        <li><a class="dropdown-item nav-link-spa" href="#order-tracking">Order Tracking</a></li>
+                      </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center navbar-icons">
+                    <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="bi bi-search"></i></a>
+                    <a href="#" class="nav-icon" data-bs-toggle="modal" data-bs-target="#authModal"><i class="bi bi-person"></i></a>
+                    <a href="#wishlist" class="nav-icon nav-link-spa position-relative">
+                        <i class="bi bi-heart"></i>
+                        <span id="wishlist-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill icon-badge">0</span>
+                    </a>
+                    <a href="#cart" class="nav-icon nav-link-spa position-relative">
+                        <i class="bi bi-cart"></i>
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill icon-badge">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="page-section active-section">
+            <div class="hero-section text-white position-relative">
+                 <img src="https://images.unsplash.com/photo-1758738180213-9320972d07eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Hero Background" class="hero-bg-image">
+                 <div class="hero-overlay"></div>
+                <div class="container-fluid container-max-width h-100 position-relative">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-lg-7 col-md-9">
+                            <span class="badge hero-badge mb-3">New Collection 2025</span>
+                            <h1 class="hero-title mb-4">Elegance Redefined</h1>
+                            <p class="hero-text mb-4">
+                                Discover our exclusive collection of formal wear crafted for the modern professional.
+                            </p>
+                            <a href="#shop" class="btn btn-primary btn-lg hero-button nav-link-spa">
+                                Shop Now <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="py-5">
+                <div class="container container-max-width">
+                    <div class="text-center mb-5">
+                        <h2 class="section-title">Shop by Category</h2>
+                        <p class="section-subtitle">Browse our curated collections for men and women</p>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                             <a href="#shop" class="category-card-link nav-link-spa" data-category="men">
+                                <div class="category-card position-relative text-white rounded overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1695472122356-02e964b060ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Men's Collection">
+                                    <div class="category-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                                        <h3 class="mb-3">Men's Collection</h3>
+                                        <span class="btn btn-outline-light">Explore Men's</span>
+                                    </div>
+                                </div>
+                             </a>
+                        </div>
+                        <div class="col-md-6">
+                             <a href="#shop" class="category-card-link nav-link-spa" data-category="women">
+                                <div class="category-card position-relative text-white rounded overflow-hidden">
+                                     <img src="https://images.unsplash.com/photo-1682183948920-16d882bd786d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Women's Collection">
+                                     <div class="category-overlay d-flex flex-column align-items-center justify-content-center text-center">
+                                        <h3 class="mb-3">Women's Collection</h3>
+                                        <span class="btn btn-outline-light">Explore Women's</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-5 bg-light-gray">
+                 <div class="container container-max-width">
+                     <div class="text-center mb-5">
+                        <h2 class="section-title">New Arrivals</h2>
+                        <p class="section-subtitle">Fresh styles just for you</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4" id="new-arrivals-container">
+                        <div class="col">Loading...</div>
+                    </div>
+                 </div>
+            </div>
+            <div class="py-5 promo-banner text-white text-center">
+                <div class="container">
+                     <h2 class="mb-3">Exclusive Sale - Up to 40% Off</h2>
+                     <p class="lead mb-4">Limited time offer on selected formal wear</p>
+                     <a href="#shop" class="btn btn-dark btn-lg nav-link-spa" data-category="sale">Shop Sale</a>
+                </div>
+            </div>
+            <div class="py-5">
+                 <div class="container container-max-width">
+                     <div class="text-center mb-5">
+                        <h2 class="section-title">Sale</h2>
+                        <p class="section-subtitle">Don't miss these amazing deals</p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4" id="sale-items-container">
+                       <div class="col">Loading...</div>
+                    </div>
+                 </div>
+            </div>
+             <div class="py-5 bg-light-gray">
+                <div class="container container-max-width">
+                     <div class="row text-center">
+                        <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="feature-icon mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">🚚</div>
+                            <h3 class="h5">Free Shipping</h3>
+                            <p class="text-muted">On orders over $200</p>
+                        </div>
+                         <div class="col-md-4 mb-4 mb-md-0">
+                            <div class="feature-icon mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">↩️</div>
+                            <h3 class="h5">Easy Returns</h3>
+                            <p class="text-muted">30-day return policy</p>
+                        </div>
+                         <div class="col-md-4">
+                            <div class="feature-icon mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle">💎</div>
+                            <h3 class="h5">Premium Quality</h3>
+                            <p class="text-muted">Finest materials & craftsmanship</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop" class="page-section py-5">
+            <div class="container container-max-width">
+                <div class="mb-4">
+                    <h1 class="section-title mb-1">Shop</h1>
+                    <p class="section-subtitle">Discover our complete collection</p>
+                </div>
+
+                <div class="mb-4">
+                    <ul class="nav nav-pills category-tabs" id="shopCategoryTabs">
+                        <li class="nav-item">
+                            <button class="nav-link active" data-category="all">All</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="men">Men</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="women">Women</button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link" data-category="sale">Sale</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-sm-flex justify-content-between align-items-center mb-4 pb-3 border-bottom filter-bar">
+                    <div class="d-flex align-items-center mb-3 mb-sm-0">
+                        <button class="btn btn-outline-secondary me-3" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapseShop" aria-expanded="false" aria-controls="filterCollapseShop">
+                            <i class="bi bi-sliders me-2"></i> Filters
+                        </button>
+                        <p class="text-muted mb-0"><span id="product-count">0</span> products</p>
+                    </div>
+                    <div class="sort-select">
+                        <select class="form-select" id="sort-select">
+                            <option value="featured" selected>Sort by Featured</option>
+                            <option value="name">Name (A-Z)</option>
+                            <option value="price-low">Price (Low to High)</option>
+                            <option value="price-high">Price (High to Low)</option>
+                        </select>
+                    </div>
+                </div>
+
+                 <div class="collapse mb-4" id="filterCollapseShop">
+                    <div class="p-4 rounded bg-light-gray">
+                        <h5 class="mb-3">Price Range</h5>
+                        <label for="priceRangeShop" class="form-label">Price: $<span id="price-min-display">0</span> - $<span id="price-max-display">2000</span></label>
+                        <input type="range" class="form-range" min="0" max="2000" step="50" id="priceRangeShop" value="2000">
+                        <p class="small text-muted mt-2">Filter products up to selected maximum price.</p>
+                         <button class="btn btn-sm btn-secondary mt-2" id="reset-filters-btn">Reset Filters</button>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4" id="shop-products-container">
+                    <div class="col">Loading products...</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page-section py-5">
+             <div class="container container-max-width">
+                 <div class="text-center mb-5">
+                    <h1 class="section-title mb-3">About Elegant Wear</h1>
+                    <p class="section-subtitle lead mx-auto" style="max-width: 700px;">
+                        Redefining luxury formal fashion since 2015
+                    </p>
+                </div>
+                 <div class="row align-items-center g-5 mb-5">
+                    <div class="col-lg-6">
+                        <div class="ratio ratio-4x3 rounded overflow-hidden shadow-sm">
+                             <img src="images/Arcilla2.png" alt="About Elegant Wear Store" class="img-fluid object-cover">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title mb-4">Our Story</h2>
+                        <div class="text-secondary space-y-3">
+                            <p>
+                              Founded in 2015, Elegant Wear began with a simple vision: to create formal wear that combines
+                              timeless elegance with modern sophistication. Our journey started in a small boutique and has
+                              grown into a global brand trusted by professionals worldwide.
+                            </p>
+                            <p>
+                              We believe that exceptional formal wear should be accessible to everyone who values quality and
+                              craftsmanship. Each piece in our collection is carefully designed and crafted using premium
+                              materials, ensuring that you always look and feel your best.
+                            </p>
+                            <p>
+                              Today, Elegant Wear stands as a symbol of refined style, serving thousands of customers who
+                              appreciate the perfect blend of tradition and innovation in formal fashion.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-light-gray rounded p-5 mb-5">
+                    <h2 class="section-title text-center mb-5">Our Values</h2>
+                    <div class="row text-center g-4">
+                        <div class="col-md-4">
+                            <div class="feature-icon bg-accent text-white mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle fs-3">✨</div>
+                            <h3 class="h5 mb-2">Quality First</h3>
+                            <p class="text-muted small">
+                              We never compromise on quality. Every garment is crafted from the finest materials with
+                              meticulous attention to detail.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                             <div class="feature-icon bg-accent text-white mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle fs-3">🌍</div>
+                            <h3 class="h5 mb-2">Sustainability</h3>
+                            <p class="text-muted small">
+                              We're committed to ethical practices and sustainable fashion, ensuring a positive impact
+                              on our planet.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                             <div class="feature-icon bg-accent text-white mx-auto mb-4 d-flex align-items-center justify-content-center rounded-circle fs-3">👔</div>
+                            <h3 class="h5 mb-2">Timeless Style</h3>
+                            <p class="text-muted small">
+                              Our designs transcend trends, offering classic elegance that remains relevant season
+                              after season.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="mb-5">
+                    <h2 class="section-title text-center mb-5">Meet Our Team</h2>
+                    <div class="row text-center g-4">
+                        <div class="col-md-6 col-lg-3">
+                             <img src="images/Arcilla3.png" alt="Pia Arcilla" class="img-fluid rounded-circle mb-3 mx-auto team-img shadow-sm">
+                            <h3 class="h5 mb-1">Pia Arcilla</h3>
+                            <p class="text-muted small">Founder & Creative Director</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                             <img src="images/Mansueto2.png" alt="Shan Dave Mansueto" class="img-fluid rounded-circle mb-3 mx-auto team-img shadow-sm">
+                            <h3 class="h5 mb-1">Shan Dave Mansueto</h3>
+                            <p class="text-muted small">Head of Design</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                             <img src="images/Cuadero2.png" alt="Glenn Cuadero" class="img-fluid rounded-circle mb-3 mx-auto team-img shadow-sm">
+                            <h3 class="h5 mb-1">Glenn Cuadero</h3>
+                            <p class="text-muted small">Operations Director</p>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                             <img src="images/Arita2.png" alt="Renz Arita" class="img-fluid rounded-circle mb-3 mx-auto team-img shadow-sm">
+                            <h3 class="h5 mb-1">Renz Arita</h3>
+                            <p class="text-muted small">Customer Experience Manager</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-dark text-white rounded p-5 text-center">
+                    <h2 class="text-white mb-3">Join the Elegant Wear Family</h2>
+                    <p class="lead text-white-80 mb-4 mx-auto" style="max-width: 600px;">
+                      Experience the difference of true luxury formal wear. Browse our collection today.
+                    </p>
+                    <a href="#shop" class="btn btn-primary btn-lg cta-button nav-link-spa">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section py-5">
+             <div class="container container-max-width">
+                 <div class="text-center mb-5">
+                    <h1 class="section-title mb-3">Contact Us</h1>
+                    <p class="section-subtitle lead mx-auto" style="max-width: 600px;">
+                        We'd love to hear from you. Get in touch with our team.
+                    </p>
+                </div>
+                 <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="p-4 p-md-5 rounded border bg-white shadow-sm">
+                            <h2 class="section-title mb-4">Send us a Message</h2>
+                            <form id="contactFormSpa" class="space-y-4">
+                                 <div class="mb-3">
+                                    <label for="nameSpa" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control form-control-input" id="nameSpa" placeholder="Enter your name" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="emailSpa" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control form-control-input" id="emailSpa" placeholder="your.email@example.com" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="subjectSpa" class="form-label">Subject</label>
+                                    <input type="text" class="form-control form-control-input" id="subjectSpa" placeholder="How can we help?" required>
+                                </div>
+                                 <div class="mb-3">
+                                    <label for="messageSpa" class="form-label">Message</label>
+                                    <textarea class="form-control form-control-input" id="messageSpa" rows="5" placeholder="Tell us more about your inquiry..." required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-dark w-100 btn-modal-primary">Send Message</button>
+                            </form>
+                             <div id="formSuccessMessageSpa" class="alert alert-success mt-3 d-none" role="alert">
+                               Message sent successfully! We'll get back to you soon.
+                             </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-6">
+                        <div class="p-4 p-md-5 rounded bg-light-gray mb-4">
+                            <h2 class="section-title mb-4">Contact Information</h2>
+                            <div class="space-y-4">
+                                 <div class="d-flex align-items-start contact-info-item">
+                                     <div class="contact-icon flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-accent text-white me-3">
+                                         <i class="bi bi-geo-alt-fill"></i>
+                                     </div>
+                                    <div>
+                                        <h6 class="mb-1">Address</h6>
+                                        <p class="text-muted small mb-0">
+                                            123 Fashion Avenue<br> New York, NY 10001<br> United States
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start contact-info-item">
+                                    <div class="contact-icon flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-accent text-white me-3">
+                                        <i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Phone</h6>
+                                        <p class="text-muted small mb-0">
+                                            +1 (555) 123-4567<br> Mon-Fri: 9am - 6pm EST
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start contact-info-item">
+                                     <div class="contact-icon flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-accent text-white me-3">
+                                        <i class="bi bi-envelope-fill"></i>
+                                     </div>
+                                    <div>
+                                        <h6 class="mb-1">Email</h6>
+                                        <p class="text-muted small mb-0">
+                                            support@elegantwear.com<br> info@elegantwear.com
+                                        </p>
+                                    </div>
+                                </div>
+                                 <div class="d-flex align-items-start contact-info-item">
+                                    <div class="contact-icon flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-accent text-white me-3">
+                                        <i class="bi bi-clock-fill"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-1">Store Hours</h6>
+                                        <p class="text-muted small mb-0">
+                                            Monday - Friday: 10am - 8pm<br> Saturday: 10am - 6pm<br> Sunday: 12pm - 5pm
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 p-md-5 rounded bg-dark text-white">
+                            <h3 class="text-white mb-2">Track Your Order</h3>
+                            <p class="text-white-80 mb-3 small">
+                                Enter your order number to track your shipment
+                            </p>
+                            <form id="orderTrackingFormSpa">
+                                <div class="input-group">
+                                    <input type="text" id="orderNumberSpa" name="orderNumber" class="form-control form-control-input bg-white-10 border-white-20 text-white placeholder-white-50" placeholder="Order number" required>
+                                    <button class="btn btn-primary cta-button nav-link-spa-btn" data-target="#order-tracking" type="submit">Track</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="mt-5 text-center">
+                    <h2 class="section-title mb-3">Connect With Us</h2>
+                    <p class="section-subtitle mb-4 mx-auto" style="max-width: 600px;">
+                        Follow us on social media for the latest updates, style inspiration, and exclusive offers
+                    </p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#" aria-label="Facebook" class="social-icon d-flex align-items-center justify-content-center rounded-circle border text-decoration-none">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-icon d-flex align-items-center justify-content-center rounded-circle border text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social-icon d-flex align-items-center justify-content-center rounded-circle border text-decoration-none">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                         <a href="#" aria-label="Pinterest" class="social-icon d-flex align-items-center justify-content-center rounded-circle border text-decoration-none">
+                            <i class="bi bi-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="page-section py-5">
+             <div class="container container-max-width">
+                 <h1 class="section-title mb-4">Shopping Cart</h1>
+                 <div id="cart-content">
+                     <div class="text-center py-5">
+                         <i class="bi bi-bag-dash" style="font-size: 4rem; color: var(--text-secondary);"></i>
+                         <h2 class="mt-3">Your Cart is Empty</h2>
+                         <p class="text-muted">Looks like you haven't added anything yet.</p>
+                         <a href="#shop" class="btn btn-dark mt-3 nav-link-spa">Continue Shopping</a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section id="wishlist" class="page-section py-5">
+            <div class="container container-max-width">
+                 <h1 class="section-title mb-4">My Wishlist</h1>
+                 <div id="wishlist-content">
+                     <div class="text-center py-5">
+                         <i class="bi bi-heartbreak" style="font-size: 4rem; color: var(--text-secondary);"></i>
+                         <h2 class="mt-3">Your Wishlist is Empty</h2>
+                         <p class="text-muted">Save your favorite items here.</p>
+                         <a href="#shop" class="btn btn-dark mt-3 nav-link-spa">Continue Shopping</a>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <section id="product-detail" class="page-section py-5">
+            <div class="container container-max-width">
+                <button class="btn btn-link back-button mb-3 nav-link-spa" href="#shop"><i class="bi bi-arrow-left me-2"></i>Back to Shop</button>
+                <div id="product-detail-content">
+                    <p>Select a product from the shop page to view details.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers" class="page-section py-5">
+            <div class="container container-max-width">
+                 <div class="text-center mb-5">
+                    <h1 class="section-title mb-3">Join Our Team</h1>
+                    <p class="section-subtitle lead mx-auto" style="max-width: 700px;">
+                        Build your career with Elegant Wear and be part of shaping the future of luxury fashion
+                    </p>
+                 </div>
+                 <img src="https://images.unsplash.com/photo-1657727534676-cac1bb160d64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Careers at Elegant Wear" class="img-fluid rounded mb-5 shadow-sm">
+
+                <h2 class="section-title text-center mb-5">Why Join Elegant Wear?</h2>
+                 <div class="row text-center g-4 mb-5">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-icon bg-accent text-white mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"><i class="bi bi-briefcase-fill fs-3"></i></div>
+                        <h3 class="h5 mb-2">Career Growth</h3>
+                        <p class="text-muted small">Continuous learning and development opportunities.</p>
+                    </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="feature-icon bg-accent text-white mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"><i class="bi bi-people-fill fs-3"></i></div>
+                        <h3 class="h5 mb-2">Great Team</h3>
+                        <p class="text-muted small">Work with passionate professionals.</p>
+                    </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="feature-icon bg-accent text-white mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"><i class="bi bi-graph-up-arrow fs-3"></i></div>
+                        <h3 class="h5 mb-2">Competitive Pay</h3>
+                        <p class="text-muted small">Industry-leading compensation and benefits.</p>
+                    </div>
+                     <div class="col-md-6 col-lg-3">
+                        <div class="feature-icon bg-accent text-white mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"><i class="bi bi-award-fill fs-3"></i></div>
+                        <h3 class="h5 mb-2">Recognition</h3>
+                        <p class="text-muted small">Your contributions are valued and celebrated.</p>
+                    </div>
+                 </div>
+
+                 <h2 class="section-title text-center mb-5">Open Positions</h2>
+                 <div class="space-y-3">
+                     <div class="p-4 border rounded hover-shadow transition-shadow">
+                         <div class="d-lg-flex justify-content-between align-items-center">
+                             <div class="mb-3 mb-lg-0">
+                                 <h3 class="h5 mb-1">Senior Fashion Designer</h3>
+                                 <p class="small text-muted mb-2">Design • New York, NY • Full-time</p>
+                                 <p class="small mb-0">Lead our design team in creating luxury formal wear.</p>
+                             </div>
+                             <a href="#" class="btn btn-primary cta-button btn-sm">Apply Now</a>
+                         </div>
+                     </div>
+                      <div class="p-4 border rounded hover-shadow transition-shadow">
+                         <div class="d-lg-flex justify-content-between align-items-center">
+                             <div class="mb-3 mb-lg-0">
+                                 <h3 class="h5 mb-1">Store Manager</h3>
+                                 <p class="small text-muted mb-2">Retail • Los Angeles, CA • Full-time</p>
+                                 <p class="small mb-0">Manage daily operations and lead our retail team.</p>
+                             </div>
+                             <a href="#" class="btn btn-primary cta-button btn-sm">Apply Now</a>
+                         </div>
+                     </div>
+                      </div>
+
+                 <div class="bg-light-gray rounded p-5 text-center mt-5">
+                    <h2 class="section-title mb-3">Don't See the Right Role?</h2>
+                    <p class="section-subtitle mb-4 mx-auto" style="max-width: 600px;">
+                      Send us your resume and we'll keep you in mind for future opportunities.
+                    </p>
+                    <button class="btn btn-dark btn-modal-primary">Submit Resume</button>
+                 </div>
+            </div>
+        </section>
+
+        <section id="store-locator" class="page-section py-5">
+            <div class="container container-max-width">
+                 <div class="text-center mb-5">
+                    <h1 class="section-title mb-3">Find a Store</h1>
+                    <p class="section-subtitle lead mx-auto" style="max-width: 700px;">
+                        Visit one of our luxury boutiques for a personalized shopping experience
+                    </p>
+                 </div>
+
+                  <div class="bg-light-gray rounded p-4 p-md-5 mb-5">
+                    <div class="mx-auto" style="max-width: 600px;">
+                        <label for="locationSearch" class="form-label mb-2">Enter location to find nearest store</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-input" id="locationSearch" placeholder="City, State or ZIP Code">
+                            <button class="btn btn-primary cta-button" type="button">Search</button>
+                        </div>
+                    </div>
+                 </div>
+
+                  <div class="row row-cols-1 row-cols-md-2 g-4">
+                     <div class="col">
+                         <div class="border rounded overflow-hidden hover-shadow transition-shadow h-100 d-flex flex-column">
+                             <div class="ratio ratio-16x9">
+                                 <img src="https://images.unsplash.com/photo-1698604832436-0e7f2c89bf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Store Location" class="img-fluid object-cover">
+                             </div>
+                             <div class="p-4 flex-grow-1 d-flex flex-column">
+                                 <h3 class="h5 mb-3">Elegant Wear - Fifth Avenue</h3>
+                                 <div class="space-y-2 mb-4 small flex-grow-1">
+                                    <p class="mb-1 d-flex"><i class="bi bi-geo-alt-fill me-2 text-accent flex-shrink-0"></i> 123 Fifth Avenue, New York, NY 10001</p>
+                                    <p class="mb-1 d-flex"><i class="bi bi-telephone-fill me-2 text-accent flex-shrink-0"></i> (212) 555-0123</p>
+                                    <p class="mb-0 d-flex"><i class="bi bi-clock-fill me-2 text-accent flex-shrink-0"></i> Mon-Sat: 10AM-8PM, Sun: 12PM-6PM</p>
+                                 </div>
+                                  <div class="d-flex gap-2 mt-auto">
+                                      <button class="btn btn-dark btn-sm flex-grow-1">Get Directions</button>
+                                      <button class="btn btn-outline-secondary btn-sm flex-grow-1">Call Store</button>
+                                  </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col">
+                         <div class="border rounded overflow-hidden hover-shadow transition-shadow h-100 d-flex flex-column">
+                             <div class="ratio ratio-16x9">
+                                 <img src="https://images.unsplash.com/photo-1698604832436-0e7f2c89bf20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080" alt="Store Location" class="img-fluid object-cover">
+                             </div>
+                             <div class="p-4 flex-grow-1 d-flex flex-column">
+                                 <h3 class="h5 mb-3">Elegant Wear - Rodeo Drive</h3>
+                                  <div class="space-y-2 mb-4 small flex-grow-1">
+                                    <p class="mb-1 d-flex"><i class="bi bi-geo-alt-fill me-2 text-accent flex-shrink-0"></i> 456 Rodeo Drive, Beverly Hills, CA 90210</p>
+                                    <p class="mb-1 d-flex"><i class="bi bi-telephone-fill me-2 text-accent flex-shrink-0"></i> (310) 555-0456</p>
+                                    <p class="mb-0 d-flex"><i class="bi bi-clock-fill me-2 text-accent flex-shrink-0"></i> Mon-Sat: 10AM-8PM, Sun: 12PM-6PM</p>
+                                 </div>
+                                  <div class="d-flex gap-2 mt-auto">
+                                      <button class="btn btn-dark btn-sm flex-grow-1">Get Directions</button>
+                                      <button class="btn btn-outline-secondary btn-sm flex-grow-1">Call Store</button>
+                                  </div>
+                             </div>
+                         </div>
+                     </div>
+                     </div>
+            </div>
+        </section>
+
+        <section id="order-tracking" class="page-section py-5">
+            <div class="container container-max-width">
+                 <div class="text-center mb-5">
+                    <h1 class="section-title mb-3">Track Your Order</h1>
+                    <p class="section-subtitle lead mx-auto" style="max-width: 700px;">
+                       Enter your order details to track your shipment
+                    </p>
+                 </div>
+
+                 <div class="mx-auto" style="max-width: 600px;">
+                    <div class="bg-light-gray rounded p-4 p-md-5 mb-4">
+                        <form id="orderTrackingFormPage">
+                             <div class="mb-3">
+                                <label for="trackOrderNumber" class="form-label">Order Number</label>
+                                <input type="text" class="form-control form-control-input" id="trackOrderNumber" placeholder="EW-2025-XXXXX" required>
+                            </div>
+                             <div class="mb-3">
+                                <label for="trackEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control form-control-input" id="trackEmail" placeholder="your.email@example.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary cta-button w-100">Track Order</button>
+                        </form>
+                    </div>
+
+                    <div id="trackingResults" class="d-none">
+                        <div class="bg-light-gray rounded p-4 p-md-5 mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h2 class="h5 mb-1">Order #<span id="resultOrderNumber"></span></h2>
+                                    <p class="small text-muted mb-0">Estimated Delivery: <span id="resultEstDelivery"></span></p>
+                                </div>
+                                <span class="badge bg-accent text-white p-2" id="resultStatus"></span>
+                            </div>
+                            <hr>
+                            <div id="resultItems" class="mb-3">
+                                </div>
+                        </div>
+                         <div class="border rounded p-4 p-md-5 bg-white">
+                             <h3 class="h5 mb-4">Shipment Timeline</h3>
+                             <div id="resultTimeline" class="timeline">
+                                 </div>
+                         </div>
+                         <div class="mt-4 text-center">
+                             <button class="btn btn-outline-secondary" id="trackAnotherBtn">Track Another Order</button>
+                         </div>
+                    </div>
+
+                 </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto"> <div class="container container-max-width text-md-left">
+            <div class="row text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold footer-brand">ELEGANT WEAR</h5>
+                    <p class="footer-text">Luxury formal fashion for the modern professional.</p>
+                </div>
+                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold footer-heading">Quick Links</h6>
+                    <p><a href="#about" class="footer-link nav-link-spa">About Us</a></p>
+                    <p><a href="#contact" class="footer-link nav-link-spa">Contact</a></p>
+                    <p><a href="#careers" class="footer-link nav-link-spa">Careers</a></p>
+                    <p><a href="#store-locator" class="footer-link nav-link-spa">Store Locator</a></p>
+                </div>
+                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                     <h6 class="text-uppercase mb-4 fw-bold footer-heading">Customer Service</h6>
+                    <p><a href="#order-tracking" class="footer-link nav-link-spa">Order Tracking</a></p>
+                    <p><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#returnsModal">Returns</a></p>
+                    <p><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#shippingModal">Shipping Info</a></p>
+                    <p><a href="#" class="footer-link" data-bs-toggle="modal" data-bs-target="#sizeGuideModal">Size Guide</a></p>
+                </div>
+                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 fw-bold footer-heading">Stay Connected</h6>
+                    <p class="footer-text mb-3">Subscribe to our newsletter for exclusive offers.</p>
+                     <div class="d-flex footer-social-icons">
+                        <a href="#" aria-label="Facebook" class="footer-icon me-3" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram" class="footer-icon me-3" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter" class="footer-icon me-3" data-bs-toggle="modal" data-bs-target="#socialMediaModal"><i class="bi bi-twitter"></i></a>
+                        <a href="#" aria-label="Email Newsletter" class="footer-icon" data-bs-toggle="modal" data-bs-target="#newsletterModal"><i class="bi bi-envelope"></i></a>
+                     </div>
+                </div>
+            </div>
+            <hr class="my-4 footer-divider">
+            <div class="text-center footer-copy">
+                <p>&copy; 2025 Elegant Wear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 mt-3 me-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body px-4 pb-4 pt-0">
+                     <div class="text-center mb-4">
+                        <h5 class="modal-title" id="authModalLabel">Welcome Back</h5>
+                        <p class="text-muted small">Sign in to your account to continue</p>
+                     </div>
+                     <form>
+                        <div class="mb-3">
+                            <label for="authEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-input" id="authEmail" placeholder="Enter your email" required>
+                        </div>
+                         <div class="mb-3">
+                            <label for="authPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-input" id="authPassword" placeholder="Enter your password" required>
+                        </div>
+                        <div class="text-end mb-3">
+                            <a href="#" class="text-decoration-none small forgot-password-link">Forgot password?</a>
+                        </div>
+                         <button type="submit" class="btn btn-dark w-100 btn-modal-primary">Sign In</button>
+                     </form>
+                     <hr class="my-4">
+                     <p class="text-center text-muted small">
+                         Don't have an account? <a href="#" class="modal-link">Sign Up</a>
+                     </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+                 <div class="modal-body p-0">
+                     <div class="p-3 border-bottom d-flex align-items-center sticky-top bg-white">
+                         <i class="bi bi-search text-muted me-2"></i>
+                         <input type="search" class="form-control border-0 shadow-none flex-grow-1" id="searchInput" placeholder="Search products..." autofocus>
+                         <button type="button" class="btn-close ms-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                     </div>
+                     <div class="p-3 search-results-container" style="max-height: 70vh; overflow-y: auto;">
+                         <div id="searchResults">
+                             <p class="text-center text-muted py-5">Start typing to search products...</p>
+                             </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+    <div class="modal fade" id="returnsModal" tabindex="-1" aria-labelledby="returnsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="returnsModalLabel">Returns & Exchanges</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-4">Our hassle-free return policy ensures your complete satisfaction</p>
+                    <h6 class="mb-3">Return Policy</h6>
+                    <ul class="list-unstyled space-y-3 mb-4">
+                        <li class="d-flex align-items-start"><i class="bi bi-clock text-accent me-3 fs-5"></i><div><strong>30-Day Returns</strong><br><span class="small text-muted">From the delivery date for a full refund.</span></div></li>
+                        <li class="d-flex align-items-start"><i class="bi bi-box-seam text-accent me-3 fs-5"></i><div><strong>Original Condition</strong><br><span class="small text-muted">Items must be unworn, unwashed, with tags.</span></div></li>
+                        <li class="d-flex align-items-start"><i class="bi bi-credit-card text-accent me-3 fs-5"></i><div><strong>Full Refund</strong><br><span class="small text-muted">Processed to original payment method (5-7 days).</span></div></li>
+                    </ul>
+                     <div class="bg-light-gray p-4 rounded mb-4">
+                        <h6 class="mb-3">How to Return</h6>
+                        <ol class="small text-secondary space-y-2 ps-3">
+                            <li>Contact customer service to initiate.</li>
+                            <li>Pack items securely in original packaging.</li>
+                            <li>Attach the prepaid return label (emailed).</li>
+                            <li>Drop off at an authorized shipping location.</li>
+                            <li>Track your return online.</li>
+                        </ol>
+                     </div>
+                     <h6 class="mb-2">Exchanges</h6>
+                     <p class="small text-secondary mb-4">Need a different size/color? Follow return process & place a new order. We offer free exchanges.</p>
+                     <h6 class="mb-2">Non-Returnable Items</h6>
+                     <ul class="small text-secondary ps-4">
+                         <li>Altered or tailored items</li>
+                         <li>Final sale items</li>
+                         <li>Items without original tags</li>
+                     </ul>
+                </div>
+                <div class="modal-footer justify-content-between">
+                     <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="#contact" class="btn btn-primary cta-button nav-link-spa-btn" data-bs-dismiss="modal"><i class="bi bi-envelope me-2"></i>Contact Support</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="shippingModal" tabindex="-1" aria-labelledby="shippingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="shippingModalLabel">Shipping Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-4">Fast, secure, and reliable delivery to your door</p>
+                     <h6 class="mb-3">Shipping Options</h6>
+                     <div class="space-y-3 mb-4">
+                         <div class="p-3 bg-light-gray rounded">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-truck text-accent me-3 fs-5 mt-1"></i>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <strong>Standard Shipping</strong>
+                                        <span class="text-accent">Free</span>
+                                    </div>
+                                    <p class="small text-muted mb-0">5-7 business days • Free on orders over $200</p>
+                                </div>
+                            </div>
+                         </div>
+                          <div class="p-3 bg-light-gray rounded">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-clock-history text-accent me-3 fs-5 mt-1"></i>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <strong>Express Shipping</strong>
+                                        <span class="text-accent">$15.00</span>
+                                    </div>
+                                    <p class="small text-muted mb-0">2-3 business days • Next-day available in select areas</p>
+                                </div>
+                            </div>
+                         </div>
+                          <div class="p-3 bg-light-gray rounded">
+                            <div class="d-flex align-items-start">
+                                <i class="bi bi-globe text-accent me-3 fs-5 mt-1"></i>
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between mb-1">
+                                        <strong>International Shipping</strong>
+                                        <span class="text-accent">Varies</span>
+                                    </div>
+                                    <p class="small text-muted mb-0">7-14 business days • Duties and taxes may apply</p>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                    <h6 class="mb-3">We Ship To</h6>
+                     <div class="row g-3 mb-4">
+                        <div class="col-sm-6"><div class="p-3 border rounded small"><strong class="d-block mb-1">United States</strong><span class="text-muted">All 50 states</span></div></div>
+                        <div class="col-sm-6"><div class="p-3 border rounded small"><strong class="d-block mb-1">Canada</strong><span class="text-muted">All provinces</span></div></div>
+                        <div class="col-sm-6"><div class="p-3 border rounded small"><strong class="d-block mb-1">Europe</strong><span class="text-muted">EU countries</span></div></div>
+                        <div class="col-sm-6"><div class="p-3 border rounded small"><strong class="d-block mb-1">Asia Pacific</strong><span class="text-muted">Select countries</span></div></div>
+                     </div>
+                    <div class="bg-light-gray p-4 rounded d-flex align-items-start mb-4">
+                         <i class="bi bi-shield-check text-accent me-3 fs-4 mt-1"></i>
+                         <div>
+                            <h6 class="mb-2">Secure & Insured</h6>
+                            <p class="small text-secondary mb-0">All shipments fully insured, require signature confirmation. Track your order with real-time updates.</p>
+                         </div>
+                    </div>
+                     <hr>
+                    <h6 class="mb-2">Order Processing</h6>
+                    <p class="small text-secondary">Orders before 2 PM EST Mon-Fri processed same day. Weekend orders processed next business day.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary cta-button w-100" data-bs-dismiss="modal">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sizeGuideModal" tabindex="-1" aria-labelledby="sizeGuideModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sizeGuideModalLabel">Size Guide</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-muted small mb-4">Find your perfect fit with our detailed sizing charts</p>
+                    <ul class="nav nav-tabs mb-3" id="sizeGuideTabs" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="men-tab" data-bs-toggle="tab" data-bs-target="#men-tab-pane" type="button" role="tab" aria-controls="men-tab-pane" aria-selected="true">Men</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="women-tab" data-bs-toggle="tab" data-bs-target="#women-tab-pane" type="button" role="tab" aria-controls="women-tab-pane" aria-selected="false">Women</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="sizeGuideTabsContent">
+                      <div class="tab-pane fade show active" id="men-tab-pane" role="tabpanel" aria-labelledby="men-tab" tabindex="0">
+                         <h6 class="mb-3 mt-4">Men's Suits & Blazers</h6>
+                         <div class="table-responsive">
+                            <table class="table table-bordered table-sm small">
+                                <thead class="table-light"><tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th><th>Shoulder (in)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>S</td><td>36-38</td><td>29-31</td><td>17-17.5</td></tr>
+                                    <tr><td>M</td><td>38-40</td><td>32-34</td><td>17.5-18</td></tr>
+                                    <tr><td>L</td><td>40-42</td><td>34-36</td><td>18-18.5</td></tr>
+                                    <tr><td>XL</td><td>42-44</td><td>36-38</td><td>18.5-19</td></tr>
+                                    <tr><td>XXL</td><td>44-46</td><td>38-40</td><td>19-19.5</td></tr>
+                                </tbody>
+                            </table>
+                         </div>
+                          <h6 class="mb-3 mt-4">Men's Dress Shirts</h6>
+                         <div class="table-responsive">
+                             <table class="table table-bordered table-sm small">
+                                <thead class="table-light"><tr><th>Size</th><th>Neck (in)</th><th>Chest (in)</th><th>Sleeve (in)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>S (14-14.5)</td><td>14-14.5</td><td>36-38</td><td>32-33</td></tr>
+                                    <tr><td>M (15-15.5)</td><td>15-15.5</td><td>38-40</td><td>33-34</td></tr>
+                                    <tr><td>L (16-16.5)</td><td>16-16.5</td><td>40-42</td><td>34-35</td></tr>
+                                    <tr><td>XL (17-17.5)</td><td>17-17.5</td><td>42-44</td><td>35-36</td></tr>
+                                </tbody>
+                            </table>
+                         </div>
+                      </div>
+                      <div class="tab-pane fade" id="women-tab-pane" role="tabpanel" aria-labelledby="women-tab" tabindex="0">
+                           <h6 class="mb-3 mt-4">Women's Dresses & Suits</h6>
+                           <div class="table-responsive">
+                             <table class="table table-bordered table-sm small">
+                                <thead class="table-light"><tr><th>Size</th><th>Bust (in)</th><th>Waist (in)</th><th>Hips (in)</th></tr></thead>
+                                <tbody>
+                                    <tr><td>XS</td><td>31-32</td><td>24-25</td><td>33-34</td></tr>
+                                    <tr><td>S</td><td>33-34</td><td>26-27</td><td>35-36</td></tr>
+                                    <tr><td>M</td><td>35-36</td><td>28-29</td><td>37-38</td></tr>
+                                    <tr><td>L</td><td>37-38</td><td>30-31</td><td>39-40</td></tr>
+                                    <tr><td>XL</td><td>39-40</td><td>32-33</td><td>41-42</td></tr>
+                                </tbody>
+                             </table>
+                           </div>
+                           <h6 class="mb-3 mt-4">Women's Blouses & Blazers</h6>
+                           <div class="table-responsive">
+                            <table class="table table-bordered table-sm small">
+                                <thead class="table-light"><tr><th>Size</th><th>Bust (in)</th><th>Shoulder (in)</th><th>Sleeve (in)</th></tr></thead>
+                                <tbody>
+                                     <tr><td>XS</td><td>31-32</td><td>14-14.5</td><td>30-30.5</td></tr>
+                                     <tr><td>S</td><td>33-34</td><td>14.5-15</td><td>30.5-31</td></tr>
+                                     <tr><td>M</td><td>35-36</td><td>15-15.5</td><td>31-31.5</td></tr>
+                                     <tr><td>L</td><td>37-38</td><td>15.5-16</td><td>31.5-32</td></tr>
+                                </tbody>
+                            </table>
+                           </div>
+                      </div>
+                    </div>
+                     <div class="bg-light-gray p-4 rounded d-flex align-items-start mt-4">
+                         <i class="bi bi-rulers text-accent me-3 fs-4 mt-1"></i>
+                         <div>
+                            <h6 class="mb-2">How to Measure</h6>
+                            <ul class="small text-secondary mb-0 ps-3">
+                                <li><strong>Chest/Bust:</strong> Measure around the fullest part.</li>
+                                <li><strong>Waist:</strong> Measure around the natural waistline.</li>
+                                <li><strong>Hips:</strong> Measure around the fullest part.</li>
+                                <li><strong>Sleeve:</strong> Measure from center back neck to wrist.</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary cta-button w-100" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                 <div class="modal-header">
+                    <h5 class="modal-title" id="newsletterModalLabel">Subscribe to Our Newsletter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                     <p class="text-muted small mb-3">Get exclusive offers, style tips, and early access</p>
+                     <form id="newsletterForm">
+                        <div class="mb-3">
+                            <label for="newsletterEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control form-control-input" id="newsletterEmail" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="bg-light-gray rounded p-3 mb-3">
+                            <h6 class="small mb-2">You'll receive:</h6>
+                            <ul class="small text-muted ps-3 mb-0">
+                                <li>Exclusive discount codes</li>
+                                <li>Early access to sales</li>
+                                <li>Style guides and fashion tips</li>
+                            </ul>
+                        </div>
+                         <button type="submit" class="btn btn-primary cta-button w-100"><i class="bi bi-envelope me-2"></i>Subscribe Now</button>
+                         <p class="text-xs text-muted text-center mt-3">By subscribing, you agree to our Privacy Policy.</p>
+                     </form>
+                      <div id="newsletterSuccess" class="text-center py-4 d-none">
+                          <i class="bi bi-check-circle-fill text-accent fs-1 mb-3"></i>
+                          <h6>Thank You for Subscribing!</h6>
+                          <p class="small text-muted">Check your inbox for a welcome email.</p>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="socialMediaModal" tabindex="-1" aria-labelledby="socialMediaModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <h5 class="modal-title" id="socialMediaModalLabel">Follow Us</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                      <p class="text-muted small mb-4">Stay connected and get inspired</p>
+                      <div class="list-group list-group-flush mb-4">
+                         <a href="#" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                             <div class="d-flex align-items-center">
+                                <i class="bi bi-facebook fs-4 me-3 text-primary"></i>
+                                <div>
+                                    Facebook <br><small class="text-muted">25K followers</small>
+                                </div>
+                             </div>
+                             <span class="btn btn-sm btn-outline-primary">Follow</span>
+                         </a>
+                          <a href="#" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                             <div class="d-flex align-items-center">
+                                <i class="bi bi-instagram fs-4 me-3 text-danger"></i>
+                                <div>
+                                    Instagram <br><small class="text-muted">45K followers</small>
+                                </div>
+                             </div>
+                             <span class="btn btn-sm btn-outline-danger">Follow</span>
+                         </a>
+                          <a href="#" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                             <div class="d-flex align-items-center">
+                                <i class="bi bi-twitter fs-4 me-3 text-info"></i>
+                                <div>
+                                    Twitter <br><small class="text-muted">15K followers</small>
+                                </div>
+                             </div>
+                             <span class="btn btn-sm btn-outline-info">Follow</span>
+                         </a>
+                      </div>
+                       <hr>
+                       <h6 class="mt-4 mb-3">Share Elegant Wear</h6>
+                       <div class="d-flex gap-2">
+                           <button class="btn btn-outline-secondary flex-grow-1 btn-sm"><i class="bi bi-share me-2"></i>Share</button>
+                           <button class="btn btn-outline-secondary flex-grow-1 btn-sm" id="copyLinkBtn"><i class="bi bi-link-45deg me-2"></i>Copy Link</button>
+                       </div>
+                       <div class="bg-light-gray rounded p-3 text-center mt-4">
+                            <p class="small text-muted mb-1">Tag us in your photos</p>
+                            <p class="text-accent mb-0 fw-bold">#ElegantWearStyle</p>
+                      </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
